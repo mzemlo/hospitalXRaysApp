@@ -1,0 +1,21 @@
+		<header ng-if="loggedAccess">EDYTUJ DANE</header>
+		<section ng-if="loggedAccess" class="content-section">
+				<form action="" id="doctor-add-form">
+					<label for="doctor-firstname">Imię</label>
+					<input class="add-form-input" type="text" name="doctor-firstname" id="doctor-firstname" value="{{curUser.name}}">
+					<label for="doctor-surname">Nazwisko</label>
+					<input class="add-form-input" type="text" name="doctor-surname" id="doctor-surname" value="{{curUser.surname}}">
+					<label for="doctor-pesel">PESEL</label>
+					<input class="add-form-input" type="text" name="doctor-pesel" id="doctor-pesel" value="{{curUser.pesel}}">
+					<label for="doctor-contract-number">Nr Umowy</label>
+					<input class="add-form-input" type="text" name="doctor-contract-number" id="doctor-contract-number" value="{{curUser.contract}}">
+					<label for="doctor-license-number">Nr Licencji</label>
+					<input class="add-form-input" type="text" name="doctor-license-number" id="doctor-license-number" value="{{curUser.license}}">
+					<input id="add-form-button" type="submit" value="Zapisz">
+				</form>
+		</section>
+
+
+
+
+

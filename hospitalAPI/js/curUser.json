@@ -1,0 +1,12 @@
+{
+  "record": {
+    "id": 1,
+    "role": "Admin",
+    "name": "Jan",
+    "surname": "Kowalski",
+    "pesel": "00013100000",
+    "contract": "00000/01",
+    "license": "00000/01"
+  }
+
+}

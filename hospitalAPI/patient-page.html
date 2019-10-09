@@ -1,0 +1,62 @@
+		<header ng-if="adminAccess">PROFIL PACJENTA</header>
+		<section ng-if="adminAccess" class="content-section">
+			<div class="profile-content patient-profile-content">
+				<div class="left-patient-section">
+					<div class="personal-info">
+						<h2>Dane Osobowe</h2>
+						<span><p class="personal-info-heading">ID: </p><p id="patient-id">{{patients[pat_name].Id}}</p></span>
+						<span><p class="personal-info-heading">Imię: </p><p>{{patients[pat_name].Name}}</p></span>
+						<span><p class="personal-info-heading">Nazwisko: </p><p>{{patients[pat_name].Surname}}</p></span>
+						<span><p class="personal-info-heading">PESEL: </p><p>{{patients[pat_name].Pesel}}</p></span>
+						<span><p class="personal-info-heading">Adres: </p><p>{{patients[pat_name].PostCode}} {{patients[pat_name].City}}, {{patients[pat_name].Street}} {{patients[pat_name].NoHouse}}{{patients[pat_name].x}}{{patients[pat_name].NoFlat}}</p></span>
+						<span><p class="personal-info-heading">Choroby: </p><p><span ng-repeat="x in patients[pat_name].DiseaseName">{{x}}</span></p></span>
+						<span><p class="personal-info-heading">Lekarz prowadzący: </p><p>{{patients[pat_name].DoctorName}}</p></span>
+						<div class="buttons">						
+							<a href="#!edit-patient/{{patients[pat_name].Id}}"><button>Edytuj Dane</button></a>
+							<button id="patient-delete-btn">Usuń Pacjenta</button>
+					</div>
+					</div>
+                    <form class="add-photo-form" id="add-photo-form">
+                        <h2>Dodaj Zdjęcie</h2>
+                        <label for="add-photo-name">Tytuł</label>
+                        <input type="text" name="add-photo-name" id="add-photo-name">
+                        <label for="add-photo-desc">Opis</label>
+                        <input type="text" name="add-photo-ndesc" id="add-photo-desc">
+                        <input type="file" name="add-photo-input" id="add-photo-input" /> <!--accept=".bmp*"-->
+                        <input type="submit" value="Dodaj zdjęcie" id="add-photo-button">
+                    </form>
+				</div>
+
+				<div class="right-patient-section">
+					<h2>Zdjęcia</h2>
+					<div class="gallery">
+						<div ng-repeat="photo in patients[pat_name].Photos" class="roentgen-photo-thumbnail">
+                            <a href="#!photo/{{photo.Id}}">
+                                <img src="{{photo.XrayPhotoBlobSource}}" alt="{{photo.DiseaseDescription}}">
+                            </a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <div id="loader" class="">
+            <div id="animation" class="load">
+                <hr /><hr /><hr /><hr />
+            </div>
+            <p id="loader-info">Trwa przetwarzanie obrazu...</p>
+        </div>
+        <script>
+         $(document).ready(function () {
+             deletePatient();
+             $('#add-photo-form').submit(function (e) {
+                 e.preventDefault();
+                 addPhoto();
+             });
+            });
+            //$(document).ready(function () {
+            //    $('#add-photo-form').submit(function (e) {
+            //        e.preventDefault();
+            //        addPhoto();
+            //    });
+            //});
+        </script>

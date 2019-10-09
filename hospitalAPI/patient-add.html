@@ -1,0 +1,34 @@
+		<header ng-if="adminAccess">DODAJ PACJENTA</header>
+		<section ng-if="adminAccess" class="content-section">
+            <form id="patient-add-form" action="/api/Patients" method="post">
+                <label for="patient-firstname">Imię*</label>
+                <input class="add-form-input" type="text" name="Name" id="patient-firstname">
+                <label for="patient-surname">Nazwisko*</label>
+                <input class="add-form-input" type="text" name="Surname" id="patient-surname">
+                <label for="patient-Pesel">PESEL</label>
+                <input class="add-form-input" type="text" name="Pesel" id="patient-Pesel">
+                <label for="patient-PostCode">Kod pocztowy*</label>
+                <input class="add-form-input" type="text" name="PostCode" id="patient-PostCode">
+                <label for="patient-City">Miasto*</label>
+                <input class="add-form-input" type="text" name="City" id="patient-City">
+                <label for="patient-Street">Ulica*</label>
+                <input class="add-form-input" type="text" name="Street" id="patient-Street">
+                <label for="patient-NoHouse">Nr domu*</label>
+                <input class="add-form-input" type="text" name="NoHouse" id="patient-NoHouse">
+                <label for="patient-NoFlat">Nr mieszkania</label>
+                <input class="add-form-input" type="text" name="NoFlat" id="patient-NoFlat">
+                <!--<label for="patient-DoctorId" ng-if="isNotDoctor">Lekarz</label>-->
+                <!--<input class="add-form-input" type="text" name="DoctorId" id="patient-DoctorId" ng-if="isNotDoctor">-->
+                <!--<select name="patient-DoctorId" id="patient-DoctorId">
+                    <option ng-repeat="doctor in doctors" value="{{doctor.Id}}">{{doctor.Name}} {{doctor.Surname}}</option>
+                </select>-->
+                <input id="add-form-button" type="submit" value="Dodaj pacjenta">
+                <p id="validation-error"></p>
+            </form>
+		</section>
+
+<script>
+    $(document).ready(function () {
+        addPatient();
+    });
+</script>

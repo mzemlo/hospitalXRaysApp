@@ -1,0 +1,97 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ul,ol{list-style:none}blockquote,q{quotes:none}a{color:inherit;text-decoration:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}::placeholder{color:#ccc;opacity:1}body{display:flex;align-items:center;justify-content:center;height:100vh;background-image:url('../img/background2.jpg');background-color:#f4f4f4;background-repeat:no-repeat;background-size:cover;font-family:'Work Sans',sans-serif}body .logo{position:absolute;top:10px;left:20px}body .logo h1{color:#ccc;font-weight:300;font-size:1.5em}body .logo h1 b{font-weight:400}body #login-box{display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:.8;-webkit-box-shadow:-2px 0 28px -6px rgba(0,0,0,.6);-moz-box-shadow:-2px 0 28px -6px rgba(0,0,0,.6);box-shadow:-2px 0 28px -6px rgba(0,0,0,.6)}body #login-box .login-header{background-color:#1f7170;width:100%;display:flex;justify-content:center;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:15px;padding-bottom:15px}body #login-box .login-header h1{font-weight:400;font-size:1.2em}body #login-box form{display:flex;flex-direction:column;padding:20px;background-color:#182030;border-bottom-left-radius:5px;border-bottom-right-radius:5px}body #login-box form .text-input{margin:15px;padding:10px;padding-left:40px;background:0;border:0;border-bottom:1px solid #ccc;font:inherit;color:#fff}body #login-box form .text-input.login{background:url('../img/if_user_2561496.svg') no-repeat scroll 2px 5px}body #login-box form .text-input.password{background:url('../img/if_lock_2561460.svg') no-repeat scroll 2px 5px}body #login-box form .text-input:focus{outline:0;border-bottom:1px solid white}body #login-box form .button-input{background-color:#1f7170;border:0;border-radius:5px;padding:10px;margin:15px;font-size:1.1em;cursor:pointer}body #login-box form .button-input:hover{background-color:#2a9998}body #login-box form .button-input:focus{outline:0}body nav{color:#fff;left:0;height:100vh;background-color:#182030;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:.9;-webkit-box-shadow:-2px 0 28px -6px rgba(0,0,0,.6);-moz-box-shadow:-2px 0 28px -6px rgba(0,0,0,.6);box-shadow:-2px 0 28px -6px rgba(0,0,0,.6);box-sizing:border-box}body nav .logo{position:absolute;top:10px;left:20px}body nav .logo a{text-decoration:underline;text-decoration-color:#1f7170}body nav .logo h1{color:#ccc;font-weight:300;font-size:1.5em}body nav .logo h1 b{font-weight:400}body nav ul{margin-left:10px;display:flex;flex-direction:column;justify-content:center;align-content:center}body nav ul li{padding:20px;padding-left:40px;padding-right:40px;font-weight:500}body nav ul li a{display:flex;align-items:center;color:#ccc;text-decoration:none;font-size:1.1em}body nav ul li a:hover{color:#2a9998;text-decoration:none}body nav ul li a:focus{outline:0}body nav ul li a:focus,body nav ul li a:hover{color:#1f7170;text-decoration:none}body nav ul li i{min-width:30px}body nav ul li .active-manu-item{color:#1f7170}body #container{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}body #container header{width:90%;height:50px;box-sizing:border-box;background-color:rgba(255,255,255,.9);-webkit-box-shadow:-2px 0 28px -6px rgba(0,0,0,.2);-moz-box-shadow:-2px 0 28px -6px rgba(0,0,0,.2);box-shadow:-2px 0 28px -6px rgba(0,0,0,.2);display:flex;align-items:center;padding-left:40px;font-weight:600;font-size:1.2em}body #container .content-section{display:flex;height:80%;width:90%;align-self:center;align-items:center;justify-content:center;justify-self:center;background-color:rgba(255,255,255,.99);-webkit-box-shadow:-2px 0 28px -6px rgba(0,0,0,.2);-moz-box-shadow:-2px 0 28px -6px rgba(0,0,0,.2);box-shadow:-2px 0 18px -6px rgba(0,0,0,.1)}body #container #doctor-search-list-button{height:45px;padding-right:30px;padding-left:30px;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1.1em;cursor:pointer}body #container #doctor-search-list-button:hover{background-color:#144948;color:#fff}body #container #doctors{height:40px}body #container .doctor-search-form{height:100%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}body #container #doctor-seach-list-text{height:40px;width:90%;padding-left:20px;color:#182030;font-size:1.1em;font-family:inherit;font-weight:400;box-sizing:border-box;background:url('../img/search.png') no-repeat;background-position-x:98%;background-position-y:7px;background-color:#fff}body #container #doctor-seach-list-text::placeholder{font-size:1.1em;font-family:inherit;font-weight:400;color:#ebeef5}body #container .doctor-search-list{overflow-y:scroll;height:80%;background-color:#fff;width:90%;border:1px solid #e6e6e6}body #container .doctor-search-list li{padding-top:10px;padding-bottom:10px;padding-left:20px;vertical-align:center;border-bottom:1px solid #e6e6e6}body #container .doctor-search-list li a{color:#182030;font-family:inherit}body #container .profile-content{width:100%;height:100%;display:flex;flex-wrap:wrap}body #container .profile-content .patient-search-form{max-height:50%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}body #container .personal-info{width:40%;margin-left:5%;margin-right:5%;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:50px;font-size:1em}body #container .personal-info h2{font-size:1.1em;font-weight:600;margin-bottom:10px}body #container .personal-info span{display:flex;width:100%;padding-bottom:5px}body #container .personal-info span .personal-info-heading{font-weight:600;padding-right:10px;width:40%}body #container .personal-info a{margin-top:20px}body #container .personal-info button{height:35px;padding-right:20px;padding-left:20px;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1em;cursor:pointer}body #container .personal-info button:hover{background-color:#144948;color:#fff}body #container .password-change{width:40%;margin-left:5%;margin-right:5%;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:50px;font-size:1em}body #container .password-change h2{font-size:1.2em;font-weight:600;margin-bottom:10px}body #container #password-change-form{display:flex;flex-direction:column}body #container #password-change-form input{margin-bottom:5px}body #container #password-change-form #password-change-button{height:35px;padding-right:20px;padding-left:20px;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1em;cursor:pointer}body #container #password-change-form #password-change-button:hover{background-color:#144948;color:#fff}body #container .patient-search-form{height:100%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}body #container .patient-search-form h2{font-size:1.2em;font-weight:600;margin-bottom:10px}body #container #patient-seach-list-text{height:40px;width:90%;padding-left:20px;color:#182030;font-size:1.1em;font-family:inherit;font-weight:400;box-sizing:border-box;background:url('../img/search.png') no-repeat;background-position-x:98%;background-position-y:7px;background-color:#fff}body #container #patient-seach-list-text::placeholder{font-size:1.1em;font-family:inherit;font-weight:400;color:#ebeef5}body #container .patient-search-list{overflow-y:scroll;height:80%;background-color:#fff;width:90%;border:1px solid #e6e6e6}body #container .patient-search-list li{padding-top:10px;padding-bottom:10px;padding-left:20px;vertical-align:center;border-bottom:1px solid #e6e6e6}body #container .patient-search-list li a{color:#182030;font-family:inherit}body #container .patient-profile-content{width:100%;height:100%;display:flex;flex-wrap:wrap}body #container .patient-profile-content .left-patient-section{width:30%;margin-left:5%;margin-right:0}body #container .patient-profile-content .left-patient-section .personal-info{width:100%}body #container .patient-profile-content .left-patient-section .personal-info .personal-info-heading{width:50%}body #container .patient-profile-content .left-patient-section .add-photo-form{width:100%;margin-left:5%;margin-right:5%;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:50px;font-size:1em}body #container .patient-profile-content .left-patient-section .add-photo-form h2{font-size:1.2em;font-weight:600;margin-bottom:10px}body #container .patient-profile-content .left-patient-section .add-photo-form #add-photo-input{padding-top:10px;padding-bottom:10px;font-size:.9em}body #container .patient-profile-content .left-patient-section .add-photo-form #add-photo-button{height:35px;padding-right:20px;padding-left:20px;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1em;cursor:pointer}body #container .patient-profile-content .left-patient-section .add-photo-form #add-photo-button:hover{background-color:#144948;color:#fff}body #container .patient-profile-content .right-patient-section{width:50%;margin-left:5%;margin-right:5%;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;margin-top:50px;margin-bottom:50px;font-size:1em}body #container .patient-profile-content .right-patient-section h2{font-size:1.2em;font-weight:600;margin-bottom:10px}body #container .patient-profile-content .gallery{display:flex;flex-wrap:wrap;height:80%;overflow-y:scroll;align-content:flex-start;justify-content:flex-start}body #container .patient-profile-content .gallery .roentgen-photo-thumbnail{width:32%;max-height:30%;margin:2px;box-sizing:border-box;overflow:hidden}body #container .patient-profile-content .gallery .roentgen-photo-thumbnail img{width:100%;overflow:hidden}body #container #doctor-add-form,body #container #patient-add-form{display:flex;flex-direction:column;width:40%}body #container #doctor-add-form label,body #container #patient-add-form label{padding-top:2px;padding-bottom:2px;color:#182030;font-size:1em;font-weight:500}body #container #doctor-add-form .add-form-input,body #container #patient-add-form .add-form-input{height:30px;padding-left:20px;color:#182030;font-size:1.1em;font-family:inherit;font-weight:400;box-sizing:border-box;background-color:#fff;margin-bottom:5px}body #container #doctor-add-form #add-form-button,body #container #patient-add-form #add-form-button{height:35px;padding-right:20px;padding-left:20px;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1em;cursor:pointer}body #container #doctor-add-form #add-form-button:hover,body #container #patient-add-form #add-form-button:hover{background-color:#144948;color:#fff}body #container .photo-content{display:flex;flex-direction:column;width:100%;height:100%;box-sizing:border-box;padding:20px}body #container .photo-content .photo-info h2{font-size:1.2em;font-weight:600;margin-bottom:10px}body #container .photo-content .photo-info span{display:flex;width:100%;padding-top:5px;padding-bottom:5px}body #container .photo-content .photo-info span .photo-info-heading{font-weight:600;padding-right:10px;width:40%}body #container .photo-content .photo-section{max-height:80%}body #container .photo-content .photo-section .photo-boxes{display:flex;max-height:100%}
+    body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box img{max-width:100%;cursor:zoom-in}body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box .photo-buttons-section{display:flex;flex-direction:column;width:100%;justify-content:center;align-items:center}body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box .photo-buttons-section a{width:100%}body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box .photo-buttons-section .photo-page-button, #photo-delete-button{height:35px;width:100%;margin-top:5px;box-sizing:border-box;color:#ccc;color:#fff;background-color:#1f7170;border:0;font-family:inherit;font-size:1em;cursor:pointer}body #container .photo-content .photo-section .photo-boxes .roentgen-photo-box .photo-buttons-section .photo-page-button:hover{background-color:#144948;color:#fff}body #container #Modal1,body #container #Modal2{width:100vw;height:100vh;margin:0}body #container #Modal1 .modal-dialog,body #container #Modal2 .modal-dialog{width:100vw;height:100vh;margin:0}body #container #Modal1 .modal-dialog .modal-content,body #container #Modal2 .modal-dialog .modal-content{width:100vw;margin:0;height:100vh;background-color:rgba(0,0,0,.77);display:flex;justify-content:center;align-items:center}body #container #Modal1 .modal-dialog .modal-content .close,body #container #Modal2 .modal-dialog .modal-content .close{position:absolute;right:20px;top:20px;font-size:60px;font-weight:100;line-height:1;color:#fff;opacity:1}body #container #Modal1 .modal-dialog .modal-content .modal-body,body #container #Modal2 .modal-dialog .modal-content .modal-body{height:90%;width:90%;display:flex;justify-content:center;align-items:center}body #container #Modal1 .modal-dialog .modal-content .modal-body img,body #container #Modal2 .modal-dialog .modal-content .modal-body img{height:100%}@media screen and (max-width: 768px){body{ min-height:100vh;height:auto}body nav{position:fixed;transform:translatex(-100%)}body #container{min-height:100vh}body #container .content-section{width:100%;min-height:90vh}body #container header{width:100%;height:10vh}body #container .personal-info,body #container .patient-profile-content .left-patient-section,body #container .patient-profile-content .right-patient-section{width:100%}body #container .password-change{width:100%}body #container .patient-search-form{height:100%;margin-bottom:50px}body #container .patient-profile-content .gallery .roentgen-photo-thumbnail{max-height:100%;height:auto}body #container #doctor-add-form,body #container #patient-add-form{width:80%}}
+.wait {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5)
+}
+.load {
+    display: none;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+#loader-info {
+    display: none;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80px);
+    font-weight: 600;
+    color: #fff;
+}
+
+    .load hr {
+        border: 0;
+        margin: 0;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        border-radius: 50%;
+        animation: spin 2s ease infinite
+    }
+
+    .load :first-child {
+        background: #19A68C;
+        animation-delay: -1.5s
+    }
+
+    .load :nth-child(2) {
+        background: #F63D3A;
+        animation-delay: -1s
+    }
+
+    .load :nth-child(3) {
+        background: #FDA543;
+        animation-delay: -0.5s
+    }
+
+    .load :last-child {
+        background: #193B48
+    }
+
+@keyframes spin {
+    0%,100% {
+        transform: translate(0)
+    }
+
+    25% {
+        transform: translate(160%)
+    }
+
+    50% {
+        transform: translate(160%, 160%)
+    }
+
+    75% {
+        transform: translate(0, 160%)
+    }
+}
+
+.photo-min {
+    max-height: 450px;
+}
+
+#validation-error {
+    padding-top: 10px;
+    color: red;
+    font-size: 14px;
+}

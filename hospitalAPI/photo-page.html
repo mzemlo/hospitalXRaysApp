@@ -1,0 +1,63 @@
+<header ng-if="loggedAccess">PROFIL PACJENTA</header>
+<section ng-if="loggedAccess" class="content-section">
+    <div class="photo-content">
+        <div class="photo-info">
+            <h2>Informacje</h2>
+            <!--<span><p class="photo-info-heading">Pacjent: </p><p>{{photos[1].patient.Surname}} {{photos[1].patient.Name}}</p></span>-->
+            <span><p class="photo-info-heading">Id: </p><p id="photo-Id">{{Photos[photo_name].Id}}</p></span>
+            <span><p class="photo-info-heading">Tytuł: </p><p>{{Photos[photo_name].DiseaseName}}</p></span>
+            <span><p class="photo-info-heading">Opis: </p><p>{{Photos[photo_name].DiseaseDescription}}</p></span>
+        </div>
+        <div class="photo-section">
+            <button id="photo-delete-button" style="width: 20%;">Usuń zdjęcie</button>
+            <div class="photo-boxes">
+                <div class="roentgen-photo-box">
+                    <img class="photo-min" data-toggle="modal" data-target="#Modal1" src="{{Photos[photo_name].XrayPhotoBlobSource}}" alt="{{Photos[photo_name].DiseaseName}}">
+                    <div class="photo-buttons-section">
+                        <a href="{{Photos[photo_name].XrayPhotoBlobSource}}" download="{{Photos[photo_name].DiseaseName}}">
+                            <button class="photo-page-button">Pobierz zdjęcie</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="roentgen-photo-box">
+                    <img class="photo-min" data-toggle="modal" data-target="#Modal2" src="{{Photos[photo_name].ColoredPhotoBlobSource}}" alt="{{Photos[photo_name].DiseaseName}}">
+                    <div class="photo-buttons-section">
+                        <a href="{{Photos[photo_name].ColoredPhotoBlobSource}}" download="{{Photos[photo_name].DiseaseName}}Colored">
+                            <button class="photo-page-button">Pobierz zdjęcie</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="Modal1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <img src="{{Photos[photo_name].XrayPhotoBlobSource}}" alt="{{Photos[photo_name].DiseaseName}}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Modal2" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <img src="{{Photos[photo_name].ColoredPhotoBlobSource}}" alt="{{Photos[photo_name].DiseaseName}}">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+         $(document).ready(function () {
+             $('#photo-delete-button').click(function (e) {
+                 deletePhoto();
+             });
+            });
+</script>

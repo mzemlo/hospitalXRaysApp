@@ -1,0 +1,39 @@
+
+<header>DODAJ LEKARZA</header>
+<section class="content-section">
+    <form action="" id="doctor-add-form">
+        <label for="doctor-login">Login</label>
+        <input class="add-form-input" type="text" name="doctor-login" id="doctor-login">
+        <label for="doctor-email">Email</label>
+        <input class="add-form-input" type="email" name="doctor-email" id="doctor-email">
+        <label for="doctor-pass">Hasło</label>
+        <input class="add-form-input" type="password" name="doctor-pass" id="doctor-pass">
+        <label for="doctor-pass2">Potwierdź hasło</label>
+        <input class="add-form-input" type="password" name="doctor-pass2" id="doctor-pass2">
+        <label for="doctor-firstname">Imię</label>
+        <input class="add-form-input" type="text" name="doctor-firstname" id="doctor-firstname">
+        <label for="doctor-surname">Nazwisko</label>
+        <input class="add-form-input" type="text" name="doctor-surname" id="doctor-surname">
+        <label for="doctor-pesel">PESEL</label>
+        <input class="add-form-input" type="text" name="doctor-pesel" id="doctor-pesel">
+        <label for="doctor-license-number">Nr Licencji</label>
+        <input class="add-form-input" type="text" name="doctor-license-number" id="doctor-license-number">
+        <label for="doctor-contract-number">Nr Umowy</label>
+        <input class="add-form-input" type="text" name="doctor-contract-number" id="doctor-contract-number">
+        <label for="role">Rola</label>
+        <select class="add-form-input" name="role" id="user-role">
+            <option value="Lekarz">Lekarz</option>
+            <option value="Ordynator">Ordynator</option>
+            <option value="Admin">Admin</option>
+        </select>
+        <input id="add-form-button" type="submit" value="Dodaj">
+    </form>
+</section>
+<script>
+            $(document).ready(function () {
+                $('#doctor-add-form').submit(function (e) {
+                    e.preventDefault();
+                    register();
+                });
+            });
+</script>

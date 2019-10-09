@@ -1,0 +1,51 @@
+
+		<header ng-if="adminAccess">EDYTUJ PACJENTA</header>
+        <section ng-if="adminAccess" class="content-section">
+            <!--<form action="" id="patient-edit-form">
+                <label for="patient-firstname">Imię</label>
+                <input class="add-form-input" type="text" name="patient-firstname" id="patient-firstname" value="{{patients[pat_name].Name}}">
+                <label for="patient-surname">Nazwisko</label>
+                <input class="add-form-input" type="text" name="patient-surname" id="patient-surname" value="{{patients[pat_name].Surname}}">
+                <label for="patient-Pesel">PESEL</label>
+                <input class="add-form-input" type="text" name="patient-Pesel" id="patient-Pesel" value="{{patients[pat_name].Pesel}}">
+                <label for="patient-PostCode">Kod pocztowy</label>
+                <input class="add-form-input" type="text" name="patient-PostCode" id="patient-PostCode" value="{{patients[pat_name].PostCode}}">
+                <label for="patient-City">Miasto</label>
+                <input class="add-form-input" type="text" name="patient-City" id="patient-City" value="{{patients[pat_name].City}}">
+                <label for="patient-Street">Ulica</label>
+                <input class="add-form-input" type="text" name="patient-Street" id="patient-Street" value="{{patients[pat_name].Street}}">
+                <label for="patient-NoHouse">Nr domu</label>
+                <input class="add-form-input" type="text" name="patient-NoHouse" id="patient-NoHouse" value="{{patients[pat_name].NoHouse}}">
+                <label for="patient-NoFlat">Nr mieszkania</label>
+                <input class="add-form-input" type="text" name="patient-NoFlat" id="patient-NoFlat" value="{{patients[pat_name].NoFlat}}">
+                <label for="patient-DiseaseName">Choroba</label>
+                <input class="add-form-input" type="text" name="patient-DiseaseName" id="patient-DiseaseName" value="{{patients[pat_name].DiseaseName}}">
+                <input id="add-form-button" type="submit" value="Zapisz">
+            </form>-->
+            <form id="patient-add-form" action="/api/Patients" method="put">
+                <label for="patient-id">Id</label>
+                <input class="add-form-input" type="text" name="Id" id="patient-id" value="{{patients[pat_name].Id}}" disabled>
+                <label for="patient-firstname">Imię</label>
+                <input class="add-form-input" type="text" name="Name" id="patient-firstname" value="{{patients[pat_name].Name}}">
+                <label for="patient-surname">Nazwisko</label>
+                <input class="add-form-input" type="text" name="Surname" id="patient-surname" value="{{patients[pat_name].Surname}}">
+                <label for="patient-Pesel">PESEL</label>
+                <input class="add-form-input" type="text" name="Pesel" id="patient-Pesel" value="{{patients[pat_name].Pesel}}">
+                <label for="patient-PostCode">Kod pocztowy</label>
+                <input class="add-form-input" type="text" name="PostCode" id="patient-PostCode" value="{{patients[pat_name].PostCode}}">
+                <label for="patient-City">Miasto</label>
+                <input class="add-form-input" type="text" name="City" id="patient-City" value="{{patients[pat_name].City}}">
+                <label for="patient-Street">Ulica</label>
+                <input class="add-form-input" type="text" name="Street" id="patient-Street" value="{{patients[pat_name].Street}}">
+                <label for="patient-NoHouse">Nr domu</label>
+                <input class="add-form-input" type="text" name="NoHouse" id="patient-NoHouse" value="{{patients[pat_name].NoHouse}}">
+                <label for="patient-NoFlat">Nr mieszkania</label>
+                <input class="add-form-input" type="text" name="NoFlat" id="patient-NoFlat" value="{{patients[pat_name].NoFlat}}">
+                <input id="add-form-button" type="submit" value="Zapisz zmiany">
+            </form>
+        </section>
+        <script>
+               $(document).ready(function () {
+                   editPatient();
+            });
+        </script>

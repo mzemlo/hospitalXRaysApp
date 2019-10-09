@@ -1,0 +1,37 @@
+<header ng-if="loggedAccess">PROFIL</header>
+<section ng-if="loggedAccess" class="content-section">
+    <div class="profile-content">
+        <div class="personal-info">
+            <h2>Dane Osobowe</h2>
+            <span><p class="personal-info-heading">Uprawnienia: </p><p>{{curUser.Role}}</p></span>
+            <span><p class="personal-info-heading">ID: </p><p>{{curUser.Id}}</p></span>
+            <span><p class="personal-info-heading">Email: </p><p>{{curUser.Email}}</p></span>
+            <span><p class="personal-info-heading">Imię: </p><p>{{curUser.Name}}</p></span>
+            <span><p class="personal-info-heading">Nazwisko: </p><p>{{curUser.Surname}}</p></span>
+            <span ng-if="adminAccess"><p class="personal-info-heading">PESEL: </p><p>{{curUser.PESEL}}</p></span>
+            <span ng-if="adminAccess"><p class="personal-info-heading">Nr Umowy: </p><p>{{curUser.Contract}}</p></span>
+            <span ng-if="adminAccess"><p class="personal-info-heading">Nr Licencji: </p><p>{{curUser.License}}</p></span>
+            <!--<a href="#!edit-profile"><button>Edytuj Dane</button></a>-->
+        </div>
+        <div class="password-change">
+            <h2>Zmień hasło</h2>
+            <form id="password-change-form" action="">
+                <label for="old-password">Podaj stare hasło</label>
+                <input type="password" name="old-password" id="old-password">
+                <label for="new-password">Podaj nowe hasło</label>
+                <input type="password" name="new-password" id="new-password">
+                <label for="confirm-new-password">Powtórz nowe hasło</label>
+                <input type="password" name="confirm-new-password" id="confirm-new-password">
+                <input type="submit" id="password-change-button" value="Zmień">
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+            $(document).ready(function () {
+                $('#password-change-form').submit(function (e) {
+                    e.preventDefault();
+                    changePassword();
+                });
+            });
+</script>

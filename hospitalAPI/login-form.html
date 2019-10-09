@@ -1,0 +1,23 @@
+		<div id="login-box" ng-if="onlyUnloggedAccess">
+			<div class="login-header">
+				<h1>LOGOWANIE</h1>
+			</div>
+			<form id="login-form" action="/api/Users" method="post">
+				<input class="text-input login" type="text" name="username" id="username" placeholder="Login">
+				<input class="text-input password" type="password" name="password" id="password" placeholder="Hasło">
+				<input class="button-input" id="login-button" type="Submit" value="Zaloguj">
+			</form>
+		</div>
+        <div id="loader" class="">
+            <div id="animation" class="load">
+                <hr /><hr /><hr /><hr />
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#login-form').submit(function (e) {
+                    e.preventDefault();
+                    login();
+                });
+            });
+        </script>

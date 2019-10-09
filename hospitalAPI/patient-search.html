@@ -1,0 +1,11 @@
+<header ng-if="adminAccess">ZNAJDŹ PACJENTA</header>
+<section ng-if="adminAccess" class="content-section">
+    <form action="" class="patient-search-form">
+        <input type="text" name="patient-list" id="patient-seach-list-text" placeholder="Pacjenci">
+        <ul id="patient-search-list" class="patient-search-list">
+            <li ng-repeat="patient in patients | orderBy : 'Surname'" >
+                <a href="#!patient/{{patient.Id}}">{{patient.Surname}} {{patient.Name}}</a>
+            </li>
+        </ul>
+    </form>
+</section>

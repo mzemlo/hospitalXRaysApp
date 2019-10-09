@@ -1,0 +1,16 @@
+﻿<header class="logo"><a href="#!home"><h1>Hospital<b>App</b></h1></a></header>
+<ul ng-controller="MenuControl" id="main-menu">
+    <li><a href="#" id="logout"><i class="fas fa-address-card"></i><p>WYLOGUJ</p></a></li>
+    <li><a href="#!profile"><i class="fas fa-address-card"></i><p>PROFIL</p></a></li>
+    <li><a href="#!patient-search"><i class="fas fa-file-medical-alt"></i><p>PACJENCI</p></a></li>
+    <li><a href="#!patient-add"><i class="fas fa-file-medical"></i><p>DODAJ PACJENTA</p></a></li>
+</ul>
+<script>
+    $(document).ready(function () {
+        $('#logout').click(function () {
+            logout();
+            $("#main-menu").load("clear.html");
+            isLogged = false;            
+        });
+    });
+</script>

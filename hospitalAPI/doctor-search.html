@@ -1,0 +1,11 @@
+		<header ng-if="doctorAccess">ZNAJDŹ LEKARZA</header>
+		<section ng-if="doctorAccess" class="content-section">
+			<form action="" class="doctor-search-form">
+				<input type="text" name="doctor-list" id="doctor-seach-list-text" placeholder="Lekarze">
+				<ul id="doctor-search-list" class="doctor-search-list" ng-controller="SheetsControl">
+					<li ng-repeat="doctor in doctors | orderBy : 'Surname'">
+                        <a href="#!doctor/{{doctor.Id}}">{{doctor.Surname}} {{doctor.Name}}</a>
+					</li>
+				</ul>	
+			</form>
+		</section>

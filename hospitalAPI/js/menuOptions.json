@@ -1,0 +1,34 @@
+{
+  "menuOptions": [
+    {
+      "id": "01",
+      "name": "PROFIL",
+      "link": "#!profile",
+      "icon": "fas fa-address-card"
+    },
+    {
+      "id": "02",
+      "name": "LEKARZE",
+      "link": "#!doctor-search",
+      "icon": "fas fa-user-md"
+    },
+    {
+      "id": "03",
+      "name": "DODAJ LEKARZA",
+      "link": "#!doctor-add",
+      "icon": "fas fa-user-plus"
+    },
+    {
+      "id": "04",
+      "name": "PACJENCI",
+      "link": "#!patient-search",
+      "icon": "fas fa-file-medical-alt"
+    },
+    {
+      "id": "05",
+      "name": "DODAJ PACJENTA",
+      "link": "#!patient-add",
+      "icon": "fas fa-file-medical"
+    }
+  ]
+}

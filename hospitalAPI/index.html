@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/routing.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/ajaxRequests.js"></script>
+    <script src="js/appController.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body ng-app="hospitalApp">
+    <nav id="main-nav">
+        <header class="logo"><a href="#"><h1 style="color: #212121;">Hospital<b>App</b></h1></a></header>
+        <ul ng-controller="MenuControl" id="main-menu">
+            <!--<li><a href="#!profile"><i class="fas fa-address-card"></i><p>PROFIL</p></a></li>
+            <li><a href="#!doctor-search"><i class="fas fa-user-md"></i><p>LEKARZE</p></a></li>
+            <li><a href="#!doctor-add"><i class="fas fa-user-plus"></i><p>DODAJ LEKARZA</p></a></li>
+            <li><a href="#!patient-search"><i class="fas fa-file-medical-alt"></i><p>PACJENCI</p></a></li>
+            <li><a href="#!patient-add"><i class="fas fa-file-medical"></i><p>DODAJ PACJENTA</p></a></li>
+            <li ng-repeat="option in Options">
+                <a href="{{option.link}}"><i class="{{option.icon}}"></i>{{option.name}}</a>
+            </li>-->
+        </ul>
+    </nav>
+
+    <article id="container" ng-view></article>
+</body>
+</html>

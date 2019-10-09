@@ -1,0 +1,116 @@
+{
+  "records": [
+  {
+    "id": 1,
+    "name":"Jan",
+    "surname":"Kowalski",
+    "pesel": "00013100000",
+    "contract": "00000/01",
+    "license": "00000/01",
+    "patients":[
+                  {
+                    "id": "01",
+                    "name" :"Pacjent",
+                    "surname":"Pierwszy",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "modelDoctors[0]",
+                    "diseases": [""],
+                    "photos": [""]
+                  },
+                  {
+                    "id": "02",
+                    "name" :"Pacjent",
+                    "surname":"Drugi",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "",
+                    "diseases": [""],
+                    "photos": [""]
+                  },
+                  {
+                    "id": "03",
+                    "name" :"Pacjent",
+                    "surname":"Trzeci",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "",
+                    "diseases": ["test1","test2"],
+                    "photos": [""]
+                  },
+                  {
+                    "id": "04",
+                    "name" :"Pacjent",
+                    "surname":"Czwarty",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "",
+                    "diseases": [""],
+                    "photos": [""]
+                  }
+                ]      
+  },  {
+    "id": 2,
+    "name":"Jan",
+    "surname":"Nowak",
+    "pesel": "00013100000",
+    "contract": "00000/02",
+    "license": "00000/02",
+    "patients":[
+                  {
+                    "id": "03",
+                    "name" :"Pacjent",
+                    "surname":"Trzeci",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "",
+                    "diseases": ["test1","test2"],
+                    "photos": [""]
+                  }
+                ]      
+  },  {
+    "id": 7,
+    "name":"Janusz",
+    "surname":"Kowalski",
+    "pesel": "00013100000",
+    "contract": "00000/03",
+    "license": "00000/03",
+    "patients": [               
+                  {
+                    "id": "04",
+                    "name" :"Pacjent",
+                    "surname":"Czwarty",
+                    "pesel": "00013100000",
+                    "postCode": "00-000",
+                    "city": "Warszawa",
+                    "street": "Testowa",
+                    "houseNo": "1",
+                    "flatNo": "1",
+                    "doctor": "",
+                    "diseases": [""],
+                    "photos": [""]
+                  }
+                ]      
+  }
+]
+}

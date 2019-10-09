@@ -1,0 +1,47 @@
+		<header ng-if="doctorAccess">PROFIL LEKARZA</header>
+		<section ng-if="doctorAccess" class="content-section">
+			<div class="profile-content">
+				<div class="personal-info">
+					<h2>Dane Osobowe</h2>
+                    <span><p class="personal-info-heading">Uprawnienia: </p><p>{{doctors[doc_name].Role}}</p></span>
+					<span><p class="personal-info-heading">ID: </p><p id="doctor-Id">{{doctors[doc_name].Id}}</p></span>
+					<span><p class="personal-info-heading">Email: </p><p>{{doctors[doc_name].Email}}</p></span>
+					<span><p class="personal-info-heading">Imię: </p><p>{{doctors[doc_name].Name}}</p></span>
+					<span><p class="personal-info-heading">Nazwisko: </p><p>{{doctors[doc_name].Surname}}</p></span>
+					<span><p class="personal-info-heading">PESEL: </p><p>{{doctors[doc_name].PESEL}}</p></span>
+					<span><p class="personal-info-heading">Nr Umowy: </p><p>{{doctors[doc_name].Contract}}</p></span>
+					<span><p class="personal-info-heading">Nr Licencji: </p><p>{{doctors[doc_name].License}}</p></span>
+					<div class="buttons">						
+						<a href="#!edit-doctor/{{doctors[doc_name].Id}}"><button>Edytuj Dane</button></a>
+						<a href="#"><button>Usuń Lekarza</button></a>
+					</div>
+				</div>
+				<div class="password-change">
+					<h2>Zmień hasło</h2>
+					<form id="password-change-form"action="">
+						<label for="new-password">Podaj nowe hasło</label>
+						<input type="password" name="new-password" id="new-password">
+						<label for="confirm-new-password">Powtórz nowe hasło</label>
+						<input type="password" name="confirm-new-password" id="confirm-new-password">
+						<input type="submit" id="password-change-button" value="Zmień">
+					</form>
+				</div>
+				<!--<form action="" class="patient-search-form">
+					<h2>Pacjenci Lekarza</h2>
+					<input type="text" name="patient-list" id="patient-seach-list-text" placeholder="Pacjenci">
+					<ul id="patient-search-list" class="patient-search-list">
+						<li ng-repeat="patient in doctors[doc_name].patients">
+							<a href="#!patient/{{patient.id}}">{{patient.surname}} {{patient.name}}</a>
+						</li>
+					</ul>	
+				</form>-->
+			</div>
+		</section>
+        <script>
+            $(document).ready(function () {
+                $('#password-change-form').submit(function (e) {
+                    e.preventDefault();
+                    setPassword();
+                });
+            });
+        </script>
